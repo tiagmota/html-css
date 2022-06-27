@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos 
+        diferentes ou simplesmente aumente e diminua 
+        o tamanho do seu navegador.
+    </p>
+    
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagem/fotop.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/fotom.png" type="image/png">
+        <img src="imagens/fotog.png" alt="imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reporduzir áudios em HTML5.</p>
+    <audio src="midia/I've Got A - RM.mp3" controls autoplay></audio>
+    <!--MP3 WAV OGG-->
+
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/I've Got A - RM.mp3" type="audio/mpag">
+        <source src="midia/I've Got A - RM.mp3" type="audio/ogg">
+        <source src="midia/I've Got A - RM.mp3" type="audio/wav"> <!--Nunca usar é muito pesado-->
+    </audio>
+    <p>Infelizmente seu navegador não consegue reproduzir áudio.</p>
+    <p><a href="midia/I've Got A - RM.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+</body> 
+</html>
